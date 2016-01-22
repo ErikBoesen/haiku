@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#before, #after {
+    position: fixed;
+    bottom: 20px;
+}
+#before {left: 20px;}
+#after {right: 20px;}
