@@ -13,8 +13,8 @@
         <p>Dolor sit amit actus</p>
         <p>Ut enim ad min.</p>
     </div>
-    <div id="before">before</div>
-    <div id="after">after</div>
+    <a id="before" href="#">before</a>
+    <a id="after" href="#">after</a>
     <script src="scripts.js"></script>
 </body>
 
