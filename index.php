@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+	<meta charset="utf-8">
     <title>haiku</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 
 <body>
-    <div class="haiku">
-        <span id="date"></span>
-        <p>Lorem ipsum et</p>
-        <p>Dolor sit amit actus</p>
-        <p>Ut enim ad min.</p>
+    <?php the_post(); ?>
+    <p><?php the_content(); ?></p>
+    <div id="before">
+        <?php previous_post('% ', 'before', 'no'); ?>
     </div>
-    <a id="before" href="#">before</a>
-    <a id="after" href="#">after</a>
-    <script src="scripts.js"></script>
+    <div id="after">
+        <?php next_post('% ', 'after', 'no'); ?>
+    </div>
 </body>
-
 </html>
