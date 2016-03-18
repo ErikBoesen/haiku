@@ -4,7 +4,7 @@ Theme URI: https://wordpress.org/themes/minim/
 Author: Erik Boesen
 Author URI: http://erikboesen.com/
 Description: Hyper-hyper-hyper-minimalistic theme.
-Version: 1.1
+Version: 1.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: minimalistic, minimal, minimalist, poem, poetry
@@ -30,19 +30,20 @@ body {
 #after a {
     position: fixed;
     bottom: 20px;
-    color: inherit;
-    text-decoration: none;
-    border-bottom: solid 1px #aaa;
-    transition: .6s;
-}
-#before a:hover,
-#after a:hover {
-    border-bottom-color: #333;
-    transition: .5s;
 }
 #before a {
     left: 20px;
 }
 #after a {
     right: 20px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: solid 1px #aaa;
+    transition: .6s;
+}
+a:hover {
+    border-bottom-color: #333;
+    transition: .5s;
 }
