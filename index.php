@@ -9,8 +9,7 @@
 
 <body>
     <article>
-        <?php the_post(); ?>
-        <h1><?php the_title(); ?></h1>
+        <h1><?php the_post(); the_title(); ?></h1>
         <?php the_content(); ?>
     </article>
     <div id="float">
