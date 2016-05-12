@@ -3,39 +3,21 @@ Theme Name: haiku
 Theme URI: https://wordpress.org/themes/minim/
 Author: Erik Boesen
 Author URI: http://erikboesen.com/
-Description: Hyper-hyper-hyper-minimalistic theme.
-Version: 1.2
+Description: Hyperminimalistic WordPress theme.
+Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: minimalistic, minimal, minimalist, poem, poetry
+Tags: minimalistic, minimal, minimalist, hyperminimalistic, clean, black and white, simple, basic
 Text Domain: haiku
 */
 
 * {
     box-sizing: border-box;
-}
-html,
-body {
-    height: 100%;
-}
-body {
     margin: 0;
+}
+body {
     font-family: serif;
     font-size: 1.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#before a,
-#after a {
-    position: fixed;
-    bottom: 20px;
-}
-#before a {
-    left: 20px;
-}
-#after a {
-    right: 20px;
 }
 a {
     color: inherit;
@@ -46,4 +28,46 @@ a {
 a:hover {
     border-bottom-color: #333;
     transition: .5s;
+}
+article {
+    max-width: 8in;
+    margin: 3em auto 1em;
+}
+h1 {
+    margin-bottom: 10px;
+}
+#float {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 45px;
+}
+#float a {
+    position: fixed;
+    display: inline;
+    bottom: 15px;
+}
+#before a {
+    left: 20px;
+}
+#after a {
+    right: 20px;
+}
+@media (max-width: 800px) {
+    article {
+        max-width: none;
+        margin: 30px 15px 50px;
+    }
+    #float {
+        background: white;
+    }
+    #float a {
+        bottom: 10px;
+    }
+    #before a {
+        left: 15px;
+    }
+    #after {
+        right: 15px;
+    }
 }
