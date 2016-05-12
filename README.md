@@ -1,12 +1,13 @@
 # haiku for WordPress
 ![Haiku Screenshot](screenshot.png)
+
 Haiku is a hyperminimalistic theme for WordPress blogs. Originally created for [ErikBoesen](https://github.com/ErikBoesen)'s [Daily Haiku Blog](http://erikboesen.com/haiku), it is now available for public usage. Unlike the original, this version of the theme is compatible with larger posts and shows post titles.
 
 ---
 ## Installation
-If you're installing the already built version of the theme, download the latest zip file of the theme [here](releases), then continue to the [loading](#Loading) section.
+If you're installing the already built version of the theme, download the latest zip file of the theme [here](https://github.com/ErikBoesen/haiku/releases), then continue to the [loading](#Loading) section.
 
-To build the theme yourself, clone or download the code, perform any desired modifications, and compress the files (minus README.md and any other unnecessary files) into a zip file. Continue to the [loading](#loading) section.
+To build the theme yourself, clone or download the code, perform any desired modifications, and compress the files (minus README.md and any other unnecessary files) into a zip file. Continue to the [loading](#Loading) section.
 
 ### Loading
 1. Open your WordPress dashboard, and go to the Appearance > Themes page.
