@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<?php $options = get_option( 'haiku_settings' ); 
+?> 
 <head>
 	<meta charset="utf-8">
     <title><?php the_title(); ?></title>
@@ -13,8 +15,9 @@
         <?php the_content(); ?>
     </article>
     <div id="float">
-        <div id="before"><?php previous_post('% ', 'before', 'no'); ?></div>
-        <div id="after"><?php next_post('% ', 'after', 'no'); ?></div>
+        <div id="before"><?php previous_post('% ', $options['txt'], 'no'); ?></div>
+        <div id="after"><?php next_post('% ', $options['haiku_text_field_1'], 'no'); ?></div>
     </div>
 </body>
 </html>
+
