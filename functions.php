@@ -52,8 +52,15 @@ function haiku_settings_init(  ) {
 		'haiku_pluginPage_section'
 	);
 
-}
+	add_settings_field(
+		'txt_color',
+		__( 'background color', 'wordpress' ),
+		'txt_color_render',
+		'pluginPage',
+		'haiku_pluginPage_section'
+	);
 
+}
 
 function txt_prev_render(  ) {
 
@@ -87,6 +94,15 @@ function check_grayscale_render(  ) {
 	$options = get_option( 'haiku_settings' );
 	?>
 	<input type='checkbox' name='haiku_settings[check_grayscale]' <?php checked( $options['check_grayscale'], 1 ); ?> value='1'>
+	<?php
+
+}
+
+function txt_color_render(  ) {
+
+	$options = get_option( 'haiku_settings' );
+	?>
+	#<input type='text' name='haiku_settings[txt_color]' value='<?php echo $options['txt_color']; ?>'>
 	<?php
 
 }

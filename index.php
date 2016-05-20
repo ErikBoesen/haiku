@@ -13,6 +13,16 @@
           }
         </style>
         ";
+
+      echo "
+        <style>
+        html,
+        body{
+          background-color:#".$options['txt_color'].";
+        }
+        </style>
+      ";
+
     }
 ?>
 <head>
