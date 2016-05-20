@@ -54,10 +54,10 @@ p {
     display: inline;
     bottom: 15px;
 }
-#before a {
+#prev a {
     left: 20px;
 }
-#after a {
+#next a {
     right: 20px;
 }
 @media (max-width: 10in) {
@@ -71,10 +71,10 @@ p {
     #float a {
         bottom: 10px;
     }
-    #before a {
+    #prev a {
         left: 15px;
     }
-    #after {
+    #next {
         right: 15px;
     }
 }
