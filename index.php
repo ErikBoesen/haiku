@@ -4,6 +4,16 @@
     $options = get_option( 'haiku_settings' );
     if ($options['txt_prev']==null) $options['txt_prev']="previous";
     if ($options['txt_next']==null) $options['txt_next']="next";
+    if ($options['check_grayscale']=="1"){
+      echo "
+        <style>
+        img {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          }
+        </style>
+        ";
+    }
 ?>
 <head>
 	<meta charset="utf-8">

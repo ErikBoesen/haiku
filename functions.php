@@ -44,6 +44,14 @@ function haiku_settings_init(  ) {
 		'haiku_pluginPage_section'
 	);
 
+	add_settings_field(
+		'check_grayscale',
+		__( 'auto grayscale images', 'wordpress' ),
+		'check_grayscale_render',
+		'pluginPage',
+		'haiku_pluginPage_section'
+	);
+
 }
 
 
@@ -74,6 +82,14 @@ function txt_404_render(  ) {
 
 }
 
+function check_grayscale_render(  ) {
+
+	$options = get_option( 'haiku_settings' );
+	?>
+	<input type='checkbox' name='haiku_settings[check_grayscale]' <?php checked( $options['check_grayscale'], 1 ); ?> value='1'>
+	<?php
+
+}
 
 function haiku_settings_section_callback(  ) {
 
