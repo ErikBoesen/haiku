@@ -5,6 +5,21 @@
     <title><?php echo bloginfo( 'name' )." - 404"; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+
+<?php
+
+		$options = get_option( 'haiku_settings' );
+
+		echo "
+			<style>
+			html,
+			body{
+				background-color:#".$options['txt_color'].";
+			}
+			</style>
+			";
+
+?>
     <style>
         html,
         body {
@@ -19,9 +34,6 @@
         }
     </style>
 
-<?php
-    $options = get_option( 'haiku_settings' );
-?>
 </head>
 <body>
     <h1><?php echo $options['txt_404'] ?></h1> </br>
