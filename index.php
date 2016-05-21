@@ -20,12 +20,6 @@
         body{
           background-color:#".$options['txt_color'].";
         }
-
-        @media (max-width: 10in) {
-
-            #float {
-                background:#".$options['txt_color'].";
-            }
         </style>
       ";
 
