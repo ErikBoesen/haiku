@@ -48,6 +48,7 @@ p {
     bottom: 0;
     width: 100vw;
     height: 45px;
+
 }
 #float a {
     position: fixed;
@@ -60,14 +61,13 @@ p {
 #next a {
     right: 20px;
 }
+
 @media (max-width: 10in) {
     article {
         max-width: none;
         margin: 30px 15px 50px;
     }
-    #float {
-        background: white;
-    }
+
     #float a {
         bottom: 10px;
     }

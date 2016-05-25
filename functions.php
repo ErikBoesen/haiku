@@ -60,6 +60,14 @@ function haiku_settings_init(  ) {
 		'haiku_pluginPage_section'
 	);
 
+	add_settings_field(
+		'radio_date',
+		__( 'display date', 'wordpress' ),
+		'radio_date_render',
+		'pluginPage',
+		'haiku_pluginPage_section'
+	);
+
 }
 
 function txt_prev_render(  ) {
@@ -107,6 +115,23 @@ function txt_color_render(  ) {
 
 }
 
+function radio_date_render(  ) {
+
+	$options = get_option( 'haiku_settings' );
+	?>
+	<input type="radio"  name="haiku_settings[radio_date]" <?php if($options['radio_date'] == 'no') echo 'checked="checked"'; ?> value="no" />no
+	</br>
+	<input type="radio"  name="haiku_settings[radio_date]" <?php if($options['radio_date'] == 'atitle') echo 'checked="checked"'; ?> value="atitle" />above the title
+	</br>
+	<input type="radio"  name="haiku_settings[radio_date]" <?php if($options['radio_date'] == 'utitle') echo 'checked="checked"'; ?> value="utitle" />under the title
+	</br>
+	<input type="radio"  name="haiku_settings[radio_date]" <?php if($options['radio_date'] == 'upost') echo 'checked="checked"'; ?> value="upost" />under the post
+	</br></br>
+	btw. you can change date format under "Settings > General".
+	<?php
+
+}
+
 function haiku_settings_section_callback(  ) {
 
 }
@@ -118,6 +143,7 @@ function haiku_options_page(  ) {
 	<form action='options.php' method='post'>
 
 		<h2>haiku theme options</h2>
+		<p>Brought to you by <a target="_blank" href="http://erikboesen.com">Erik Boesen</a> and <a target="_blank" href="http://karlo-sintic.from.hr">Karlo Sintic</a>.</p>
 
 		<?php
 		settings_fields( 'pluginPage' );

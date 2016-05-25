@@ -20,7 +20,13 @@
         body{
           background-color:#".$options['txt_color'].";
         }
-        </style>
+
+
+        @media (max-width: 10in) {
+           #float {
+           background:#".$options['txt_color'].";
+           }
+          </style>
       ";
 
     }
@@ -33,9 +39,14 @@
 </head>
 
 <body>
+
     <article>
-        <h1><?php the_post(); the_title(); ?></h1>
+        <?php the_post(); ?>
+        <?php if ($options['radio_date']=="atitle") echo the_date('', '<h5>', '</h5>')?>
+        <h1><?php the_title(); ?></h1>
+        <?php if ($options['radio_date']=="utitle") echo the_date('', '<h5>', '</h5>')?>
         <?php the_content(); ?>
+        <?php if ($options['radio_date']=="upost") echo the_date('', '<h5>', '</h5>')?>
     </article>
     <div id="float">
         <div id="prev"><?php previous_post('% ', $options['txt_prev'], 'no'); ?></div>
