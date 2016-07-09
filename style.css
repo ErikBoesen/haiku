@@ -4,7 +4,7 @@ Theme URI: https://github.com/ErikBoesen/haiku/releases
 Author: Erik Boesen
 Author URI: http://erikboesen.com/
 Description: Hyperminimalistic WordPress theme.
-Version: 2.0
+Version: 2.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: minimalistic, minimal, minimalist, hyperminimalistic, clean, black and white, simple, basic
@@ -16,6 +16,7 @@ Text Domain: haiku
     margin: 0;
 }
 body {
+    background: white;
     font-family: serif;
     font-size: 1.5em;
     -moz-osx-font-smoothing: grayscale;
@@ -67,7 +68,9 @@ p {
         max-width: none;
         margin: 30px 15px 50px;
     }
-
+    #float {
+        background: white;
+    }
     #float a {
         bottom: 10px;
     }

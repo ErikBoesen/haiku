@@ -17,7 +17,8 @@ To build the theme yourself, clone or download the code, perform any desired mod
 5. Click activate to finish the installation.
 
 ## Features
-* Ridiculously low footprint and page sizes (~110 bytes not including post contents)
+* Ridiculously low footprint and page sizes (~100 bytes not including post contents)
+* Lots of options for customization
 * 100% responsive
 * No custom fonts or external resources and still looks beautiful
 
