@@ -127,7 +127,7 @@ function radio_date_render(  ) {
 	</br>
 	<input type="radio"  name="haiku_settings[radio_date]" <?php if($options['radio_date'] == 'upost') echo 'checked="checked"'; ?> value="upost" />under the post
 	</br></br>
-	btw. you can change date format under "Settings > General".
+	You can change date format under <em>Settings > General</em>.
 	<?php
 
 }
@@ -142,8 +142,7 @@ function haiku_options_page(  ) {
 	?>
 	<form action='options.php' method='post'>
 
-		<h2>haiku theme options</h2>
-		<p>Brought to you by <a target="_blank" href="http://erikboesen.com">Erik Boesen</a> and <a target="_blank" href="http://karlo-sintic.from.hr">Karlo Sintic</a>.</p>
+		<h2>Haiku Options</h2>
 
 		<?php
 		settings_fields( 'pluginPage' );
