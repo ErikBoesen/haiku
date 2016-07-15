@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <?php
-        $options = get_option( 'haiku_settings' );
+        $options = get_option( 'haiku_options' );
         if ($options['txt_prev'] == null) $options['txt_prev'] = 'previous';
         if ($options['txt_next'] == null) $options['txt_next'] = 'next';
     ?>
@@ -15,7 +15,6 @@
             echo '
                 <style>
                     img {
-                        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
                         -webkit-filter: grayscale(100%);
                         filter: grayscale(100%);
                     }
